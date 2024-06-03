@@ -58,6 +58,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Data\BookStore.db-shm" />
+    <None Remove="Data\BookStore.db-wal" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Pages\**\*.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
