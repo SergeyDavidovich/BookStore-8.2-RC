@@ -24867,3 +24867,979 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-06-03 23:10:19.128 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 6.6554ms
 2024-06-03 23:10:19.129 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
 2024-06-03 23:10:19.130 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/api/abp/application-localization?CultureName=ru&OnlyDynamics=True&api-version=1.0 - 200 null application/json; charset=utf-8 10.1437ms
+2024-06-04 00:15:45.580 +02:00 [INF] Starting web host.
+2024-06-04 00:15:47.568 +02:00 [INF] Loaded ABP modules:
+2024-06-04 00:15:47.569 +02:00 [INF] - BookStore.Blazor.BookStoreBlazorModule
+2024-06-04 00:15:47.569 +02:00 [INF]   - BookStore.BookStoreApplicationModule
+2024-06-04 00:15:47.569 +02:00 [INF]     - BookStore.BookStoreDomainModule
+2024-06-04 00:15:47.570 +02:00 [INF]       - BookStore.BookStoreDomainSharedModule
+2024-06-04 00:15:47.570 +02:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-06-04 00:15:47.570 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-06-04 00:15:47.570 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-06-04 00:15:47.570 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-06-04 00:15:47.570 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-06-04 00:15:47.570 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-06-04 00:15:47.570 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-06-04 00:15:47.570 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-06-04 00:15:47.570 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-06-04 00:15:47.570 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-06-04 00:15:47.570 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-06-04 00:15:47.570 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-06-04 00:15:47.570 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-06-04 00:15:47.570 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-06-04 00:15:47.570 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-06-04 00:15:47.570 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-06-04 00:15:47.570 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-06-04 00:15:47.570 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-06-04 00:15:47.570 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-06-04 00:15:47.570 +02:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-06-04 00:15:47.570 +02:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-06-04 00:15:47.570 +02:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-06-04 00:15:47.571 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-06-04 00:15:47.571 +02:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2024-06-04 00:15:47.571 +02:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2024-06-04 00:15:47.571 +02:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-06-04 00:15:47.571 +02:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2024-06-04 00:15:47.571 +02:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-06-04 00:15:47.571 +02:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-06-04 00:15:47.571 +02:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-06-04 00:15:47.571 +02:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-06-04 00:15:47.571 +02:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-06-04 00:15:47.571 +02:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-06-04 00:15:47.572 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-06-04 00:15:47.572 +02:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-06-04 00:15:47.572 +02:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-06-04 00:15:47.572 +02:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-06-04 00:15:47.572 +02:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-06-04 00:15:47.572 +02:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2024-06-04 00:15:47.572 +02:00 [INF]     - BookStore.BookStoreApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-06-04 00:15:47.572 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-06-04 00:15:47.572 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-06-04 00:15:47.572 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-06-04 00:15:47.572 +02:00 [INF]   - BookStore.EntityFrameworkCore.BookStoreEntityFrameworkCoreModule
+2024-06-04 00:15:47.572 +02:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-06-04 00:15:47.572 +02:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.Sqlite.AbpEntityFrameworkCoreSqliteModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-06-04 00:15:47.573 +02:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-06-04 00:15:47.574 +02:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-06-04 00:15:47.574 +02:00 [INF]   - BookStore.BookStoreHttpApiModule
+2024-06-04 00:15:47.574 +02:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-06-04 00:15:47.574 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-06-04 00:15:47.574 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-06-04 00:15:47.574 +02:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-06-04 00:15:47.574 +02:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-06-04 00:15:47.574 +02:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-06-04 00:15:47.574 +02:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2024-06-04 00:15:47.575 +02:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-06-04 00:15:47.575 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-06-04 00:15:47.575 +02:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-06-04 00:15:47.576 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-06-04 00:15:47.576 +02:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-06-04 00:15:47.576 +02:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-06-04 00:15:47.576 +02:00 [INF]   - Volo.Abp.AspNetCore.Components.Server.BasicTheme.AbpAspNetCoreComponentsServerBasicThemeModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Web.BasicTheme.AbpAspNetCoreComponentsWebBasicThemeModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Web.Theming.AbpAspNetCoreComponentsWebThemingModule
+2024-06-04 00:15:47.576 +02:00 [INF]         - Volo.Abp.BlazoriseUI.AbpBlazoriseUIModule
+2024-06-04 00:15:47.576 +02:00 [INF]           - Volo.Abp.AspNetCore.Components.Web.AbpAspNetCoreComponentsWebModule
+2024-06-04 00:15:47.576 +02:00 [INF]             - Volo.Abp.AspNetCore.Components.AbpAspNetCoreComponentsModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Server.Theming.AbpAspNetCoreComponentsServerThemingModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Server.AbpAspNetCoreComponentsServerModule
+2024-06-04 00:15:47.576 +02:00 [INF]         - Volo.Abp.Http.Client.AbpHttpClientModule
+2024-06-04 00:15:47.576 +02:00 [INF]           - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2024-06-04 00:15:47.576 +02:00 [INF]         - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-06-04 00:15:47.576 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-06-04 00:15:47.576 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-06-04 00:15:47.576 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-06-04 00:15:47.576 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-06-04 00:15:47.576 +02:00 [INF]   - Volo.Abp.Identity.Blazor.Server.AbpIdentityBlazorServerModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.Identity.Blazor.AbpIdentityBlazorModule
+2024-06-04 00:15:47.576 +02:00 [INF]       - Volo.Abp.PermissionManagement.Blazor.AbpPermissionManagementBlazorModule
+2024-06-04 00:15:47.576 +02:00 [INF]     - Volo.Abp.PermissionManagement.Blazor.Server.AbpPermissionManagementBlazorServerModule
+2024-06-04 00:15:47.577 +02:00 [INF]   - Volo.Abp.TenantManagement.Blazor.Server.AbpTenantManagementBlazorServerModule
+2024-06-04 00:15:47.577 +02:00 [INF]     - Volo.Abp.TenantManagement.Blazor.AbpTenantManagementBlazorModule
+2024-06-04 00:15:47.577 +02:00 [INF]       - Volo.Abp.FeatureManagement.Blazor.AbpFeatureManagementBlazorModule
+2024-06-04 00:15:47.577 +02:00 [INF]         - Volo.Abp.SettingManagement.Blazor.AbpSettingManagementBlazorModule
+2024-06-04 00:15:47.577 +02:00 [INF]     - Volo.Abp.FeatureManagement.Blazor.Server.AbpFeatureManagementBlazorServerModule
+2024-06-04 00:15:47.577 +02:00 [INF]   - Volo.Abp.SettingManagement.Blazor.Server.AbpSettingManagementBlazorServerModule
+2024-06-04 00:15:47.643 +02:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-06-04 00:15:47.657 +02:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-06-04 00:15:47.780 +02:00 [INF] User profile is available. Using 'C:\Users\write\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 00:15:48.333 +02:00 [INF] Initialized all ABP modules.
+2024-06-04 00:15:48.461 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 00:15:48.461 +02:00 [INF] Hosting environment: Development
+2024-06-04 00:15:48.461 +02:00 [INF] Content root path: C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor
+2024-06-04 00:15:48.490 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - null null
+2024-06-04 00:15:50.651 +02:00 [INF] Executing endpoint '/ (/)'
+2024-06-04 00:15:50.884 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 00:15:50.887 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 00:15:50.891 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 00:15:51.062 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 00:15:51.225 +02:00 [INF] Executed endpoint '/ (/)'
+2024-06-04 00:15:51.272 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - 200 null text/html; charset=utf-8 2782.3912ms
+2024-06-04 00:15:51.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/v4-shims.css - null null
+2024-06-04 00:15:51.283 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/all.css - null null
+2024-06-04 00:15:51.284 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/global.js - null null
+2024-06-04 00:15:51.285 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/blazor-global-styles.css - null null
+2024-06-04 00:15:51.290 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/css/v4-shims.css was not modified
+2024-06-04 00:15:51.292 +02:00 [INF] The file /blazor-global-styles.css was not modified
+2024-06-04 00:15:51.292 +02:00 [INF] The file /global.js was not modified
+2024-06-04 00:15:51.293 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/css/all.css was not modified
+2024-06-04 00:15:51.295 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/all.css - 304 null text/css 12.0401ms
+2024-06-04 00:15:51.295 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/v4-shims.css - 304 null text/css 12.1153ms
+2024-06-04 00:15:51.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/BookStore.Blazor.Client.styles.css - null null
+2024-06-04 00:15:51.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 00:15:51.296 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/blazor-global-styles.css - 304 null text/css 10.448ms
+2024-06-04 00:15:51.296 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - null null
+2024-06-04 00:15:51.296 +02:00 [INF] The file /BookStore.Blazor.Client.styles.css was not modified
+2024-06-04 00:15:51.297 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/BookStore.Blazor.Client.styles.css - 304 null text/css 1.6565ms
+2024-06-04 00:15:51.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/global.js - 304 null application/javascript 15.1526ms
+2024-06-04 00:15:51.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 4.1639ms
+2024-06-04 00:15:51.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.7155ms
+2024-06-04 00:15:51.644 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 - null null
+2024-06-04 00:15:51.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 - null null
+2024-06-04 00:15:51.687 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 00:15:51.687 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 was not modified
+2024-06-04 00:15:51.687 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 was not modified
+2024-06-04 00:15:51.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 00:15:51.688 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 - 304 null font/woff2 44.1804ms
+2024-06-04 00:15:51.689 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - null null
+2024-06-04 00:15:51.690 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 - 304 null font/woff2 28.814ms
+2024-06-04 00:15:51.691 +02:00 [INF] The file /_framework/blazor.boot.json was not modified
+2024-06-04 00:15:51.694 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - 304 null application/json 2.8513ms
+2024-06-04 00:15:51.702 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 14.8075ms
+2024-06-04 00:15:51.702 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 15.4876ms
+2024-06-04 00:15:51.703 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 00:15:51.703 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 00:15:51.703 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 00:15:51.703 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 00:15:51.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 6.2473ms
+2024-06-04 00:15:51.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 6.6119ms
+2024-06-04 00:15:51.710 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 00:15:51.710 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 00:15:51.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 00:15:51.719 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 8.0279ms
+2024-06-04 00:15:51.719 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 00:15:51.876 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/appsettings.json - null null
+2024-06-04 00:15:51.877 +02:00 [INF] The file /appsettings.json was not modified
+2024-06-04 00:15:51.878 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/appsettings.json - 304 null application/json 1.5749ms
+2024-06-04 00:15:58.168 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - null null
+2024-06-04 00:15:58.183 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:58.245 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/Account/Login - null null
+2024-06-04 00:15:58.257 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/Account/Login - 404 null null 12.2007ms
+2024-06-04 00:15:58.258 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/Account/Login, Response status code: 404
+2024-06-04 00:15:58.280 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-06-04 00:15:58.465 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-06-04 00:15:58.660 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-06-04 00:15:58.671 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-06-04 00:15:58.708 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 423.8262ms
+2024-06-04 00:15:58.708 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:58.711 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - 200 null application/json; charset=utf-8 542.7227ms
+2024-06-04 00:15:59.219 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/api/abp/application-localization?CultureName=ru&OnlyDynamics=True&api-version=1.0 - null null
+2024-06-04 00:15:59.240 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:59.246 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2024-06-04 00:15:59.296 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2024-06-04 00:15:59.298 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 52.1504ms
+2024-06-04 00:15:59.298 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:59.300 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/api/abp/application-localization?CultureName=ru&OnlyDynamics=True&api-version=1.0 - 200 null application/json; charset=utf-8 80.8667ms
+2024-06-04 00:15:59.339 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - null null
+2024-06-04 00:15:59.340 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:59.340 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationRequestOptions) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2024-06-04 00:15:59.346 +02:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2024-06-04 00:15:59.350 +02:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2024-06-04 00:15:59.350 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2024-06-04 00:15:59.352 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 10.8182ms
+2024-06-04 00:15:59.352 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:59.353 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/api/abp/application-configuration?IncludeLocalizationResources=False&api-version=1.0 - 200 null application/json; charset=utf-8 14.0039ms
+2024-06-04 00:15:59.370 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/api/abp/application-localization?CultureName=ru&OnlyDynamics=True&api-version=1.0 - null null
+2024-06-04 00:15:59.372 +02:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:59.372 +02:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationLocalization", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto] GetAsync(Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController (Volo.Abp.AspNetCore.Mvc).
+2024-06-04 00:15:59.377 +02:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationLocalizationDto'.
+2024-06-04 00:15:59.379 +02:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 6.3374ms
+2024-06-04 00:15:59.379 +02:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationLocalizationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2024-06-04 00:15:59.380 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/api/abp/application-localization?CultureName=ru&OnlyDynamics=True&api-version=1.0 - 200 null application/json; charset=utf-8 9.7614ms
+2024-06-04 00:16:47.457 +02:00 [INF] Starting web host.
+2024-06-04 00:16:49.388 +02:00 [INF] Loaded ABP modules:
+2024-06-04 00:16:49.390 +02:00 [INF] - BookStore.Blazor.BookStoreBlazorModule
+2024-06-04 00:16:49.390 +02:00 [INF]   - BookStore.BookStoreApplicationModule
+2024-06-04 00:16:49.390 +02:00 [INF]     - BookStore.BookStoreDomainModule
+2024-06-04 00:16:49.390 +02:00 [INF]       - BookStore.BookStoreDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-06-04 00:16:49.390 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-06-04 00:16:49.390 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-06-04 00:16:49.390 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-06-04 00:16:49.390 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-06-04 00:16:49.390 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-06-04 00:16:49.390 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-06-04 00:16:49.390 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-06-04 00:16:49.390 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-06-04 00:16:49.390 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-06-04 00:16:49.390 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-06-04 00:16:49.390 +02:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-06-04 00:16:49.390 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2024-06-04 00:16:49.390 +02:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2024-06-04 00:16:49.390 +02:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2024-06-04 00:16:49.391 +02:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-06-04 00:16:49.391 +02:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2024-06-04 00:16:49.391 +02:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-06-04 00:16:49.391 +02:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-06-04 00:16:49.391 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-06-04 00:16:49.391 +02:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-06-04 00:16:49.391 +02:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-06-04 00:16:49.391 +02:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-06-04 00:16:49.391 +02:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-06-04 00:16:49.392 +02:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-06-04 00:16:49.392 +02:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-06-04 00:16:49.392 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-06-04 00:16:49.392 +02:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-06-04 00:16:49.392 +02:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-06-04 00:16:49.392 +02:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-06-04 00:16:49.392 +02:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-06-04 00:16:49.392 +02:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2024-06-04 00:16:49.392 +02:00 [INF]     - BookStore.BookStoreApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-06-04 00:16:49.392 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-06-04 00:16:49.393 +02:00 [INF]   - BookStore.EntityFrameworkCore.BookStoreEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.Sqlite.AbpEntityFrameworkCoreSqliteModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-06-04 00:16:49.393 +02:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-06-04 00:16:49.394 +02:00 [INF]   - BookStore.BookStoreHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-06-04 00:16:49.394 +02:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-06-04 00:16:49.394 +02:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-06-04 00:16:49.394 +02:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-06-04 00:16:49.394 +02:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2024-06-04 00:16:49.394 +02:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-06-04 00:16:49.394 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-06-04 00:16:49.394 +02:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-06-04 00:16:49.394 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-06-04 00:16:49.395 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-06-04 00:16:49.395 +02:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-06-04 00:16:49.395 +02:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-06-04 00:16:49.395 +02:00 [INF]   - Volo.Abp.AspNetCore.Components.Server.BasicTheme.AbpAspNetCoreComponentsServerBasicThemeModule
+2024-06-04 00:16:49.395 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Web.BasicTheme.AbpAspNetCoreComponentsWebBasicThemeModule
+2024-06-04 00:16:49.395 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Web.Theming.AbpAspNetCoreComponentsWebThemingModule
+2024-06-04 00:16:49.395 +02:00 [INF]         - Volo.Abp.BlazoriseUI.AbpBlazoriseUIModule
+2024-06-04 00:16:49.395 +02:00 [INF]           - Volo.Abp.AspNetCore.Components.Web.AbpAspNetCoreComponentsWebModule
+2024-06-04 00:16:49.395 +02:00 [INF]             - Volo.Abp.AspNetCore.Components.AbpAspNetCoreComponentsModule
+2024-06-04 00:16:49.395 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Server.Theming.AbpAspNetCoreComponentsServerThemingModule
+2024-06-04 00:16:49.395 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Server.AbpAspNetCoreComponentsServerModule
+2024-06-04 00:16:49.395 +02:00 [INF]         - Volo.Abp.Http.Client.AbpHttpClientModule
+2024-06-04 00:16:49.395 +02:00 [INF]           - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2024-06-04 00:16:49.395 +02:00 [INF]         - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-06-04 00:16:49.395 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-06-04 00:16:49.396 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-06-04 00:16:49.396 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-06-04 00:16:49.396 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-06-04 00:16:49.396 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-06-04 00:16:49.396 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-06-04 00:16:49.396 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-06-04 00:16:49.396 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-06-04 00:16:49.396 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-06-04 00:16:49.396 +02:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-06-04 00:16:49.396 +02:00 [INF]   - Volo.Abp.Identity.Blazor.Server.AbpIdentityBlazorServerModule
+2024-06-04 00:16:49.396 +02:00 [INF]     - Volo.Abp.Identity.Blazor.AbpIdentityBlazorModule
+2024-06-04 00:16:49.396 +02:00 [INF]       - Volo.Abp.PermissionManagement.Blazor.AbpPermissionManagementBlazorModule
+2024-06-04 00:16:49.396 +02:00 [INF]     - Volo.Abp.PermissionManagement.Blazor.Server.AbpPermissionManagementBlazorServerModule
+2024-06-04 00:16:49.396 +02:00 [INF]   - Volo.Abp.TenantManagement.Blazor.Server.AbpTenantManagementBlazorServerModule
+2024-06-04 00:16:49.396 +02:00 [INF]     - Volo.Abp.TenantManagement.Blazor.AbpTenantManagementBlazorModule
+2024-06-04 00:16:49.396 +02:00 [INF]       - Volo.Abp.FeatureManagement.Blazor.AbpFeatureManagementBlazorModule
+2024-06-04 00:16:49.396 +02:00 [INF]         - Volo.Abp.SettingManagement.Blazor.AbpSettingManagementBlazorModule
+2024-06-04 00:16:49.396 +02:00 [INF]     - Volo.Abp.FeatureManagement.Blazor.Server.AbpFeatureManagementBlazorServerModule
+2024-06-04 00:16:49.396 +02:00 [INF]   - Volo.Abp.SettingManagement.Blazor.Server.AbpSettingManagementBlazorServerModule
+2024-06-04 00:16:49.459 +02:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-06-04 00:16:49.473 +02:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-06-04 00:16:49.607 +02:00 [INF] User profile is available. Using 'C:\Users\write\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 00:16:50.237 +02:00 [INF] Initialized all ABP modules.
+2024-06-04 00:16:50.457 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 00:16:50.458 +02:00 [INF] Hosting environment: Development
+2024-06-04 00:16:50.458 +02:00 [INF] Content root path: C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor
+2024-06-04 00:16:50.487 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - null null
+2024-06-04 00:16:52.442 +02:00 [INF] Executing endpoint '/ (/)'
+2024-06-04 00:16:52.830 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 00:16:52.836 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 00:16:52.840 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 00:16:53.075 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 00:16:53.251 +02:00 [INF] Executed endpoint '/ (/)'
+2024-06-04 00:16:53.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - 200 null text/html; charset=utf-8 2814.7615ms
+2024-06-04 00:16:53.316 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 00:16:53.316 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - null null
+2024-06-04 00:16:53.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 6.1597ms
+2024-06-04 00:16:53.363 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.3725ms
+2024-06-04 00:16:53.577 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 00:16:53.584 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 00:16:53.588 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 00:16:53.608 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 20.1038ms
+2024-06-04 00:16:53.609 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 31.6252ms
+2024-06-04 00:16:53.609 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 00:16:53.609 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 00:16:53.621 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 36.3289ms
+2024-06-04 00:16:53.621 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 00:16:53.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 00:16:53.635 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 10.7363ms
+2024-06-04 00:16:53.635 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 00:16:53.643 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 00:16:53.650 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 6.5624ms
+2024-06-04 00:16:53.650 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 00:16:53.757 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - null null
+2024-06-04 00:16:53.817 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json'
+2024-06-04 00:16:53.823 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - 200 34017 application/json 65.6458ms
+2024-06-04 00:16:53.845 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_blazor/initializers - null null
+2024-06-04 00:16:53.855 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:53.858 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:53.859 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_blazor/initializers - 200 null application/json; charset=utf-8 13.2487ms
+2024-06-04 00:16:53.884 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/appsettings.json - null null
+2024-06-04 00:16:53.885 +02:00 [INF] The file /appsettings.json was not modified
+2024-06-04 00:16:53.886 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/appsettings.json - 304 null application/json 2.9398ms
+2024-06-04 00:16:53.926 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44379/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-04 00:16:53.965 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:53.972 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:53.973 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44379/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 46.9718ms
+2024-06-04 00:16:53.988 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44379/_blazor?id=cGmM2k0tS1zDCuwcslf1jQ - null null
+2024-06-04 00:16:53.993 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:54.572 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 00:16:54.575 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 00:16:54.593 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 00:16:54.615 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 00:16:54.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 00:16:54.741 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 00:16:54.742 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 00:16:54.768 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 27.3926ms
+2024-06-04 00:16:54.768 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 00:16:54.813 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 73.5774ms
+2024-06-04 00:16:54.813 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 00:16:54.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 00:16:54.821 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 7.2227ms
+2024-06-04 00:16:54.822 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 00:16:54.822 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 00:16:54.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 6.7202ms
+2024-06-04 00:16:54.829 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 00:16:54.831 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 87.8774ms
+2024-06-04 00:16:54.831 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 00:16:55.076 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.wasm - null null
+2024-06-04 00:16:55.098 +02:00 [INF] Sending file. Request path: '/_framework/BookStore.Blazor.Client.wasm'. Physical path: 'C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor.Client\bin\Debug\net8.0\wwwroot\_framework\BookStore.Blazor.Client.wasm'
+2024-06-04 00:16:55.100 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.wasm - 200 41237 application/wasm 23.7237ms
+2024-06-04 00:16:55.117 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.pdb - null null
+2024-06-04 00:16:55.122 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:55.148 +02:00 [INF] Sending file. Request path: '/_framework/BookStore.Blazor.Client.pdb.gz'. Physical path: 'C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor.Client\bin\Debug\net8.0\wwwroot\_framework\BookStore.Blazor.Client.pdb.gz'
+2024-06-04 00:16:55.149 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:16:55.155 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.pdb.gz - 200 19613 application/octet-stream 37.6679ms
+2024-06-04 00:17:00.555 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:17:00.556 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44379/_blazor?id=cGmM2k0tS1zDCuwcslf1jQ - 101 null null 6567.3242ms
+2024-06-04 00:17:00.610 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44379/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryyBw3vd2OIRb2HmN4 359
+2024-06-04 00:17:00.616 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:17:00.641 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 00:17:00.642 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44379/_blazor/disconnect - 499 null null 32.181ms
+2024-06-04 13:42:19.735 +02:00 [INF] Starting web host.
+2024-06-04 13:42:42.063 +02:00 [INF] Loaded ABP modules:
+2024-06-04 13:42:42.064 +02:00 [INF] - BookStore.Blazor.BookStoreBlazorModule
+2024-06-04 13:42:42.064 +02:00 [INF]   - BookStore.BookStoreApplicationModule
+2024-06-04 13:42:42.064 +02:00 [INF]     - BookStore.BookStoreDomainModule
+2024-06-04 13:42:42.064 +02:00 [INF]       - BookStore.BookStoreDomainSharedModule
+2024-06-04 13:42:42.064 +02:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-06-04 13:42:42.064 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-06-04 13:42:42.064 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-06-04 13:42:42.064 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-06-04 13:42:42.064 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-06-04 13:42:42.064 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-06-04 13:42:42.064 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-06-04 13:42:42.064 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-06-04 13:42:42.064 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-06-04 13:42:42.064 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-06-04 13:42:42.064 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-06-04 13:42:42.064 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-06-04 13:42:42.064 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-06-04 13:42:42.064 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-06-04 13:42:42.064 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-06-04 13:42:42.064 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-06-04 13:42:42.064 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-06-04 13:42:42.064 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-06-04 13:42:42.064 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-06-04 13:42:42.064 +02:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-06-04 13:42:42.064 +02:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-06-04 13:42:42.064 +02:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-06-04 13:42:42.064 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-06-04 13:42:42.064 +02:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-06-04 13:42:42.064 +02:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-06-04 13:42:42.065 +02:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-06-04 13:42:42.065 +02:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-06-04 13:42:42.065 +02:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-06-04 13:42:42.065 +02:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-06-04 13:42:42.065 +02:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - BookStore.BookStoreApplicationContractsModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - BookStore.EntityFrameworkCore.BookStoreEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.Sqlite.AbpEntityFrameworkCoreSqliteModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - BookStore.BookStoreHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-06-04 13:42:42.066 +02:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-06-04 13:42:42.066 +02:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-06-04 13:42:42.066 +02:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2024-06-04 13:42:42.066 +02:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-06-04 13:42:42.066 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - Volo.Abp.AspNetCore.Components.Server.BasicTheme.AbpAspNetCoreComponentsServerBasicThemeModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Web.BasicTheme.AbpAspNetCoreComponentsWebBasicThemeModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Web.Theming.AbpAspNetCoreComponentsWebThemingModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.BlazoriseUI.AbpBlazoriseUIModule
+2024-06-04 13:42:42.066 +02:00 [INF]           - Volo.Abp.AspNetCore.Components.Web.AbpAspNetCoreComponentsWebModule
+2024-06-04 13:42:42.066 +02:00 [INF]             - Volo.Abp.AspNetCore.Components.AbpAspNetCoreComponentsModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Server.Theming.AbpAspNetCoreComponentsServerThemingModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Server.AbpAspNetCoreComponentsServerModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.Http.Client.AbpHttpClientModule
+2024-06-04 13:42:42.066 +02:00 [INF]           - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-06-04 13:42:42.066 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-06-04 13:42:42.066 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-06-04 13:42:42.066 +02:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-06-04 13:42:42.066 +02:00 [INF]   - Volo.Abp.Identity.Blazor.Server.AbpIdentityBlazorServerModule
+2024-06-04 13:42:42.066 +02:00 [INF]     - Volo.Abp.Identity.Blazor.AbpIdentityBlazorModule
+2024-06-04 13:42:42.067 +02:00 [INF]       - Volo.Abp.PermissionManagement.Blazor.AbpPermissionManagementBlazorModule
+2024-06-04 13:42:42.067 +02:00 [INF]     - Volo.Abp.PermissionManagement.Blazor.Server.AbpPermissionManagementBlazorServerModule
+2024-06-04 13:42:42.067 +02:00 [INF]   - Volo.Abp.TenantManagement.Blazor.Server.AbpTenantManagementBlazorServerModule
+2024-06-04 13:42:42.067 +02:00 [INF]     - Volo.Abp.TenantManagement.Blazor.AbpTenantManagementBlazorModule
+2024-06-04 13:42:42.067 +02:00 [INF]       - Volo.Abp.FeatureManagement.Blazor.AbpFeatureManagementBlazorModule
+2024-06-04 13:42:42.067 +02:00 [INF]         - Volo.Abp.SettingManagement.Blazor.AbpSettingManagementBlazorModule
+2024-06-04 13:42:42.067 +02:00 [INF]     - Volo.Abp.FeatureManagement.Blazor.Server.AbpFeatureManagementBlazorServerModule
+2024-06-04 13:42:42.067 +02:00 [INF]   - Volo.Abp.SettingManagement.Blazor.Server.AbpSettingManagementBlazorServerModule
+2024-06-04 13:42:42.157 +02:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-06-04 13:42:42.170 +02:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-06-04 13:42:43.009 +02:00 [INF] User profile is available. Using 'C:\Users\write\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 13:42:44.336 +02:00 [INF] Initialized all ABP modules.
+2024-06-04 13:42:44.651 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 13:42:44.651 +02:00 [INF] Hosting environment: Development
+2024-06-04 13:42:44.651 +02:00 [INF] Content root path: C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor
+2024-06-04 13:42:44.939 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - null null
+2024-06-04 13:42:46.249 +02:00 [INF] Executing endpoint '/ (/)'
+2024-06-04 13:42:46.506 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 13:42:46.527 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 13:42:46.530 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 13:42:47.005 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 13:42:47.239 +02:00 [INF] Executed endpoint '/ (/)'
+2024-06-04 13:42:47.293 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - 200 null text/html; charset=utf-8 2350.0116ms
+2024-06-04 13:42:47.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/BookStore.Blazor.Client.styles.css - null null
+2024-06-04 13:42:47.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/blazor-global-styles.css - null null
+2024-06-04 13:42:47.310 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/all.css - null null
+2024-06-04 13:42:47.312 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/css/all.css was not modified
+2024-06-04 13:42:47.312 +02:00 [INF] The file /blazor-global-styles.css was not modified
+2024-06-04 13:42:47.312 +02:00 [INF] The file /BookStore.Blazor.Client.styles.css was not modified
+2024-06-04 13:42:47.313 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/v4-shims.css - null null
+2024-06-04 13:42:47.315 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/css/v4-shims.css was not modified
+2024-06-04 13:42:47.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/blazor-global-styles.css - 304 null text/css 10.8523ms
+2024-06-04 13:42:47.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/BookStore.Blazor.Client.styles.css - 304 null text/css 10.8401ms
+2024-06-04 13:42:47.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/all.css - 304 null text/css 6.3321ms
+2024-06-04 13:42:47.317 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/css/v4-shims.css - 304 null text/css 3.8347ms
+2024-06-04 13:42:47.326 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - null null
+2024-06-04 13:42:47.326 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 13:42:47.327 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/global.js - null null
+2024-06-04 13:42:47.328 +02:00 [INF] The file /global.js was not modified
+2024-06-04 13:42:47.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/global.js - 304 null application/javascript 1.533ms
+2024-06-04 13:42:47.333 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 5.6925ms
+2024-06-04 13:42:47.453 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.3811ms
+2024-06-04 13:42:47.530 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 - null null
+2024-06-04 13:42:47.531 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 was not modified
+2024-06-04 13:42:47.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2 - 304 null font/woff2 2.0486ms
+2024-06-04 13:42:47.532 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 - null null
+2024-06-04 13:42:47.533 +02:00 [INF] The file /libs/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 was not modified
+2024-06-04 13:42:47.534 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/libs/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 - 304 null font/woff2 1.7609ms
+2024-06-04 13:42:47.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 13:42:47.660 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 13:42:47.672 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 16.4762ms
+2024-06-04 13:42:47.672 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 13.2193ms
+2024-06-04 13:42:47.672 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 13:42:47.672 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 13:42:47.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 13:42:47.687 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 13:42:47.688 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 5.8152ms
+2024-06-04 13:42:47.688 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 13:42:47.689 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 13:42:47.695 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 6.392ms
+2024-06-04 13:42:47.695 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 13:42:47.707 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 19.9244ms
+2024-06-04 13:42:47.707 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 13:42:47.710 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - null null
+2024-06-04 13:42:47.711 +02:00 [INF] The file /_framework/blazor.boot.json was not modified
+2024-06-04 13:42:47.712 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - 304 null application/json 2.5267ms
+2024-06-04 13:42:47.952 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/appsettings.json - null null
+2024-06-04 13:42:47.953 +02:00 [INF] The file /appsettings.json was not modified
+2024-06-04 13:42:47.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/appsettings.json - 304 null application/json 2.2707ms
+2024-06-04 13:42:57.696 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - null null
+2024-06-04 13:42:57.714 +02:00 [INF] Executing endpoint '/ (/)'
+2024-06-04 13:42:57.729 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 13:42:57.730 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 13:42:57.731 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 13:42:57.744 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 13:42:57.755 +02:00 [INF] Executed endpoint '/ (/)'
+2024-06-04 13:42:57.760 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - 200 null text/html; charset=utf-8 63.8538ms
+2024-06-04 13:42:57.805 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 13:42:57.807 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 2.0882ms
+2024-06-04 13:42:57.816 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - null null
+2024-06-04 13:42:57.834 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.3391ms
+2024-06-04 13:42:58.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 13:42:58.160 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 10.1201ms
+2024-06-04 13:42:58.160 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 13:42:58.161 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 13:42:58.161 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 13:42:58.165 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 4.3813ms
+2024-06-04 13:42:58.165 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 13:42:58.166 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 13:42:58.170 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 4.3007ms
+2024-06-04 13:42:58.170 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 13:42:58.170 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 13:42:58.174 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 3.7897ms
+2024-06-04 13:42:58.175 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 13:42:58.175 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 14.7089ms
+2024-06-04 13:42:58.175 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 13:42:58.309 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - null null
+2024-06-04 13:42:58.312 +02:00 [INF] The file /_framework/blazor.boot.json was not modified
+2024-06-04 13:42:58.313 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - 304 null application/json 3.7835ms
+2024-06-04 13:42:58.424 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/appsettings.json - null null
+2024-06-04 13:42:58.425 +02:00 [INF] The file /appsettings.json was not modified
+2024-06-04 13:42:58.426 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/appsettings.json - 304 null application/json 2.3869ms
+2024-06-04 13:44:43.108 +02:00 [INF] Starting web host.
+2024-06-04 13:44:45.207 +02:00 [INF] Loaded ABP modules:
+2024-06-04 13:44:45.208 +02:00 [INF] - BookStore.Blazor.BookStoreBlazorModule
+2024-06-04 13:44:45.208 +02:00 [INF]   - BookStore.BookStoreApplicationModule
+2024-06-04 13:44:45.208 +02:00 [INF]     - BookStore.BookStoreDomainModule
+2024-06-04 13:44:45.208 +02:00 [INF]       - BookStore.BookStoreDomainSharedModule
+2024-06-04 13:44:45.208 +02:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2024-06-04 13:44:45.208 +02:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2024-06-04 13:44:45.208 +02:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2024-06-04 13:44:45.208 +02:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2024-06-04 13:44:45.208 +02:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2024-06-04 13:44:45.208 +02:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2024-06-04 13:44:45.208 +02:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2024-06-04 13:44:45.208 +02:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2024-06-04 13:44:45.209 +02:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2024-06-04 13:44:45.209 +02:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2024-06-04 13:44:45.209 +02:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2024-06-04 13:44:45.209 +02:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2024-06-04 13:44:45.209 +02:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2024-06-04 13:44:45.209 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2024-06-04 13:44:45.209 +02:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2024-06-04 13:44:45.209 +02:00 [INF]           - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2024-06-04 13:44:45.209 +02:00 [INF]             - Volo.Abp.Json.AbpJsonAbstractionsModule
+2024-06-04 13:44:45.209 +02:00 [INF]             - Volo.Abp.Timing.AbpTimingModule
+2024-06-04 13:44:45.209 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2024-06-04 13:44:45.209 +02:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2024-06-04 13:44:45.209 +02:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2024-06-04 13:44:45.209 +02:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2024-06-04 13:44:45.210 +02:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2024-06-04 13:44:45.210 +02:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2024-06-04 13:44:45.210 +02:00 [INF]         - Volo.Abp.OpenIddict.AbpOpenIddictDomainSharedModule
+2024-06-04 13:44:45.210 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2024-06-04 13:44:45.210 +02:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2024-06-04 13:44:45.210 +02:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2024-06-04 13:44:45.210 +02:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2024-06-04 13:44:45.210 +02:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2024-06-04 13:44:45.210 +02:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2024-06-04 13:44:45.210 +02:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2024-06-04 13:44:45.210 +02:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2024-06-04 13:44:45.210 +02:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2024-06-04 13:44:45.210 +02:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2024-06-04 13:44:45.210 +02:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2024-06-04 13:44:45.210 +02:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2024-06-04 13:44:45.210 +02:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2024-06-04 13:44:45.210 +02:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2024-06-04 13:44:45.210 +02:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2024-06-04 13:44:45.211 +02:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2024-06-04 13:44:45.211 +02:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2024-06-04 13:44:45.211 +02:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2024-06-04 13:44:45.211 +02:00 [INF]       - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2024-06-04 13:44:45.211 +02:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2024-06-04 13:44:45.211 +02:00 [INF]           - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2024-06-04 13:44:45.211 +02:00 [INF]         - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2024-06-04 13:44:45.212 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2024-06-04 13:44:45.212 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainModule
+2024-06-04 13:44:45.213 +02:00 [INF]         - Volo.Abp.Users.AbpUsersDomainModule
+2024-06-04 13:44:45.213 +02:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2024-06-04 13:44:45.213 +02:00 [INF]       - Volo.Abp.OpenIddict.AbpOpenIddictDomainModule
+2024-06-04 13:44:45.214 +02:00 [INF]       - Volo.Abp.PermissionManagement.OpenIddict.AbpPermissionManagementDomainOpenIddictModule
+2024-06-04 13:44:45.214 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2024-06-04 13:44:45.214 +02:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2024-06-04 13:44:45.214 +02:00 [INF]       - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2024-06-04 13:44:45.214 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2024-06-04 13:44:45.215 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2024-06-04 13:44:45.215 +02:00 [INF]       - Volo.Abp.Emailing.AbpEmailingModule
+2024-06-04 13:44:45.215 +02:00 [INF]         - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2024-06-04 13:44:45.215 +02:00 [INF]           - Volo.Abp.TextTemplating.Scriban.AbpTextTemplatingScribanModule
+2024-06-04 13:44:45.215 +02:00 [INF]             - Volo.Abp.TextTemplating.AbpTextTemplatingCoreModule
+2024-06-04 13:44:45.215 +02:00 [INF]     - Volo.Abp.Account.AbpAccountApplicationModule
+2024-06-04 13:44:45.215 +02:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2024-06-04 13:44:45.215 +02:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2024-06-04 13:44:45.215 +02:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2024-06-04 13:44:45.215 +02:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2024-06-04 13:44:45.215 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityApplicationModule
+2024-06-04 13:44:45.215 +02:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2024-06-04 13:44:45.215 +02:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2024-06-04 13:44:45.215 +02:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2024-06-04 13:44:45.215 +02:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2024-06-04 13:44:45.215 +02:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2024-06-04 13:44:45.215 +02:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2024-06-04 13:44:45.215 +02:00 [INF]     - BookStore.BookStoreApplicationContractsModule
+2024-06-04 13:44:45.216 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2024-06-04 13:44:45.216 +02:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2024-06-04 13:44:45.216 +02:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementApplicationModule
+2024-06-04 13:44:45.216 +02:00 [INF]   - BookStore.EntityFrameworkCore.BookStoreEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]       - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]         - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.OpenIddict.EntityFrameworkCore.AbpOpenIddictEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.EntityFrameworkCore.Sqlite.AbpEntityFrameworkCoreSqliteModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2024-06-04 13:44:45.216 +02:00 [INF]     - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2024-06-04 13:44:45.217 +02:00 [INF]   - BookStore.BookStoreHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2024-06-04 13:44:45.217 +02:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2024-06-04 13:44:45.217 +02:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2024-06-04 13:44:45.217 +02:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2024-06-04 13:44:45.217 +02:00 [INF]             - Volo.Abp.AspNetCore.AbpAspNetCoreAbstractionsModule
+2024-06-04 13:44:45.217 +02:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2024-06-04 13:44:45.217 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2024-06-04 13:44:45.217 +02:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2024-06-04 13:44:45.217 +02:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2024-06-04 13:44:45.217 +02:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2024-06-04 13:44:45.217 +02:00 [INF]   - Volo.Abp.AspNetCore.Components.Server.BasicTheme.AbpAspNetCoreComponentsServerBasicThemeModule
+2024-06-04 13:44:45.217 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Web.BasicTheme.AbpAspNetCoreComponentsWebBasicThemeModule
+2024-06-04 13:44:45.217 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Web.Theming.AbpAspNetCoreComponentsWebThemingModule
+2024-06-04 13:44:45.218 +02:00 [INF]         - Volo.Abp.BlazoriseUI.AbpBlazoriseUIModule
+2024-06-04 13:44:45.218 +02:00 [INF]           - Volo.Abp.AspNetCore.Components.Web.AbpAspNetCoreComponentsWebModule
+2024-06-04 13:44:45.218 +02:00 [INF]             - Volo.Abp.AspNetCore.Components.AbpAspNetCoreComponentsModule
+2024-06-04 13:44:45.218 +02:00 [INF]     - Volo.Abp.AspNetCore.Components.Server.Theming.AbpAspNetCoreComponentsServerThemingModule
+2024-06-04 13:44:45.218 +02:00 [INF]       - Volo.Abp.AspNetCore.Components.Server.AbpAspNetCoreComponentsServerModule
+2024-06-04 13:44:45.218 +02:00 [INF]         - Volo.Abp.Http.Client.AbpHttpClientModule
+2024-06-04 13:44:45.218 +02:00 [INF]           - Volo.Abp.RemoteServices.AbpRemoteServicesModule
+2024-06-04 13:44:45.218 +02:00 [INF]         - Volo.Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule
+2024-06-04 13:44:45.218 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2024-06-04 13:44:45.218 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2024-06-04 13:44:45.218 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2024-06-04 13:44:45.218 +02:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2024-06-04 13:44:45.218 +02:00 [INF]           - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2024-06-04 13:44:45.218 +02:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2024-06-04 13:44:45.218 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2024-06-04 13:44:45.218 +02:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2024-06-04 13:44:45.218 +02:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2024-06-04 13:44:45.219 +02:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2024-06-04 13:44:45.219 +02:00 [INF]   - Volo.Abp.Identity.Blazor.Server.AbpIdentityBlazorServerModule
+2024-06-04 13:44:45.219 +02:00 [INF]     - Volo.Abp.Identity.Blazor.AbpIdentityBlazorModule
+2024-06-04 13:44:45.219 +02:00 [INF]       - Volo.Abp.PermissionManagement.Blazor.AbpPermissionManagementBlazorModule
+2024-06-04 13:44:45.219 +02:00 [INF]     - Volo.Abp.PermissionManagement.Blazor.Server.AbpPermissionManagementBlazorServerModule
+2024-06-04 13:44:45.219 +02:00 [INF]   - Volo.Abp.TenantManagement.Blazor.Server.AbpTenantManagementBlazorServerModule
+2024-06-04 13:44:45.219 +02:00 [INF]     - Volo.Abp.TenantManagement.Blazor.AbpTenantManagementBlazorModule
+2024-06-04 13:44:45.219 +02:00 [INF]       - Volo.Abp.FeatureManagement.Blazor.AbpFeatureManagementBlazorModule
+2024-06-04 13:44:45.219 +02:00 [INF]         - Volo.Abp.SettingManagement.Blazor.AbpSettingManagementBlazorModule
+2024-06-04 13:44:45.219 +02:00 [INF]     - Volo.Abp.FeatureManagement.Blazor.Server.AbpFeatureManagementBlazorServerModule
+2024-06-04 13:44:45.219 +02:00 [INF]   - Volo.Abp.SettingManagement.Blazor.Server.AbpSettingManagementBlazorServerModule
+2024-06-04 13:44:45.281 +02:00 [DBG] Started background worker: Volo.Abp.BackgroundJobs.BackgroundJobWorker
+2024-06-04 13:44:45.294 +02:00 [DBG] Started background worker: Volo.Abp.OpenIddict.Tokens.TokenCleanupBackgroundWorker
+2024-06-04 13:44:45.476 +02:00 [INF] User profile is available. Using 'C:\Users\write\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 13:44:46.185 +02:00 [INF] Initialized all ABP modules.
+2024-06-04 13:44:46.395 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 13:44:46.396 +02:00 [INF] Hosting environment: Development
+2024-06-04 13:44:46.396 +02:00 [INF] Content root path: C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor
+2024-06-04 13:44:46.433 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/ - null null
+2024-06-04 13:44:48.508 +02:00 [INF] Executing endpoint '/ (/)'
+2024-06-04 13:44:48.773 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 13:44:48.776 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 13:44:48.782 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 13:44:48.960 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 13:44:49.168 +02:00 [INF] Executed endpoint '/ (/)'
+2024-06-04 13:44:49.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/ - 200 null text/html; charset=utf-8 2812.8742ms
+2024-06-04 13:44:49.251 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_vs/browserLink - null null
+2024-06-04 13:44:49.251 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-04 13:44:49.259 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/aspnetcore-browser-refresh.js - 200 13768 application/javascript; charset=utf-8 6.4813ms
+2024-06-04 13:44:49.316 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.9874ms
+2024-06-04 13:44:49.478 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 13:44:49.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 13:44:49.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 13:44:49.485 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 13:44:49.494 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 15.3267ms
+2024-06-04 13:44:49.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 17.0079ms
+2024-06-04 13:44:49.496 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 13:44:49.496 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 13:44:49.496 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 13:44:49.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 18.2969ms
+2024-06-04 13:44:49.498 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 13:44:49.501 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 4.6677ms
+2024-06-04 13:44:49.501 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 13:44:49.511 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 26.2367ms
+2024-06-04 13:44:49.512 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 13:44:49.521 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - null null
+2024-06-04 13:44:49.566 +02:00 [INF] Sending file. Request path: '/_framework/blazor.boot.json'. Physical path: 'C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json'
+2024-06-04 13:44:49.572 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/blazor.boot.json - 200 34017 application/json 50.4542ms
+2024-06-04 13:44:49.675 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_blazor/initializers - null null
+2024-06-04 13:44:49.683 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:49.688 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:49.690 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_blazor/initializers - 200 null application/json; charset=utf-8 14.7658ms
+2024-06-04 13:44:49.740 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/appsettings.json - null null
+2024-06-04 13:44:49.746 +02:00 [INF] The file /appsettings.json was not modified
+2024-06-04 13:44:49.748 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/appsettings.json - 304 null application/json 7.2541ms
+2024-06-04 13:44:49.773 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44379/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-04 13:44:49.785 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:49.802 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:49.803 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44379/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 29.8881ms
+2024-06-04 13:44:49.855 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44379/_blazor?id=9e0fii3Tj1aqO0lN_ewBqw - null null
+2024-06-04 13:44:49.859 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:50.452 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.Emailing
+2024-06-04 13:44:50.455 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: SettingManagement.TimeZone
+2024-06-04 13:44:50.457 +02:00 [INF] Authorization failed. These requirements were not met:
+PermissionRequirement: FeatureManagement.ManageHostFeatures
+2024-06-04 13:44:50.483 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-04 13:44:50.707 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - null null
+2024-06-04 13:44:50.719 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css - 404 null null 11.4384ms
+2024-06-04 13:44:50.719 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/abp-bundle.css, Response status code: 404
+2024-06-04 13:44:50.719 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - null null
+2024-06-04 13:44:50.724 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - null null
+2024-06-04 13:44:50.724 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css - 404 null null 5.0958ms
+2024-06-04 13:44:50.725 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/font-bundle.css, Response status code: 404
+2024-06-04 13:44:50.725 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - null null
+2024-06-04 13:44:50.730 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css - 404 null null 6.369ms
+2024-06-04 13:44:50.730 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/blazor-bundle.css, Response status code: 404
+2024-06-04 13:44:50.731 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - null null
+2024-06-04 13:44:50.731 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css - 404 null null 6.2481ms
+2024-06-04 13:44:50.731 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/layout-bundle.css, Response status code: 404
+2024-06-04 13:44:50.739 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css - 404 null null 7.8136ms
+2024-06-04 13:44:50.739 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44379/_content/Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme/side-menu/css/bootstrap-dim.css, Response status code: 404
+2024-06-04 13:44:50.979 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.wasm - null null
+2024-06-04 13:44:50.993 +02:00 [INF] Sending file. Request path: '/_framework/BookStore.Blazor.Client.wasm'. Physical path: 'C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor.Client\bin\Debug\net8.0\wwwroot\_framework\BookStore.Blazor.Client.wasm'
+2024-06-04 13:44:50.996 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.wasm - 200 40213 application/wasm 16.5597ms
+2024-06-04 13:44:51.013 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.pdb - null null
+2024-06-04 13:44:51.016 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:51.035 +02:00 [INF] Sending file. Request path: '/_framework/BookStore.Blazor.Client.pdb.gz'. Physical path: 'C:\Desktop\BookStore 8.2 RC\src\BookStore.Blazor.Client\bin\Debug\net8.0\wwwroot\_framework\BookStore.Blazor.Client.pdb.gz'
+2024-06-04 13:44:51.037 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:51.041 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44379/_framework/BookStore.Blazor.Client.pdb.gz - 200 19382 application/octet-stream 28.1863ms
+2024-06-04 13:44:54.762 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44379/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryF1BixjBOzzX4vRgS 359
+2024-06-04 13:44:54.770 +02:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:54.790 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:54.791 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:44379/_blazor?id=9e0fii3Tj1aqO0lN_ewBqw - 101 null null 4935.773ms
+2024-06-04 13:44:54.836 +02:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-04 13:44:54.837 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44379/_blazor/disconnect - 499 null null 74.7701ms

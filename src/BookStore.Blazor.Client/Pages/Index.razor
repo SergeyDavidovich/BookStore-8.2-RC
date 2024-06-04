@@ -3,17 +3,17 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 <div class="container">
     <div class="p-5 text-center">
-        <Badge Color="Color.Success" class="mb-4">
+       @*  <Badge Color="Color.Success" class="mb-4">
             <h5 class="m-1"> <i class="fas fa-rocket"></i> Congratulations, <strong>BookStore</strong> is successfully running!</h5>
         </Badge>
-
+ *@
         <h1>Welcome to the Application</h1>
 
         <p class="lead px-lg-5 mx-lg-5">@L["LongWelcomeMessage"]</p>
 
         @if (!CurrentUser.IsAuthenticated)
         {
-            <a class="btn btn-primary" href="Account/Login"><i class="fa fa-sign-in"></i> @L["Login"]</a>
+            @* <a class="btn btn-primary" href="Account/Login"><i class="fa fa-sign-in"></i> @L["Login"]</a> *@
         }
     </div>
 
@@ -49,7 +49,7 @@
 
     <div class="card mt-4 mb-5">
         <div class="card-body">
-            <div class="row text-center justify-content-md-center">
+            <div class="row justify-content-md-center text-center">
                 <div class="col-lg-4">
                     <div class="p-4">
                         <h5 class="mb-3"><i class="fas fa-book text-secondary d-block my-3 fa-2x"></i> Learn the ABP Framework</h5>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row text-center mt-lg-3 justify-content-md-center">
+            <div class="row mt-lg-3 justify-content-md-center text-center">
                 <div class="col-lg-4">
                     <div class="p-4">
                         <h5 class="mb-3"><i class="fas fa-pen-nib text-secondary d-block my-3 fa-2x"></i> ABP Blog</h5>
@@ -114,7 +114,7 @@
                 rapid application development tooling, professional UI themes, premium support and more.
             </p>
 
-            <div class="row text-center justify-content-md-center">
+            <div class="row justify-content-md-center text-center">
                 <div class="col-lg-2">
                     <div class="p-3">
                         <h6>
